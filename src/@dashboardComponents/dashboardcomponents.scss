@@ -1,0 +1,9 @@
+.container-dashboard-components {
+    display: flex;
+    width: 100px;
+
+    .container-header {
+        display: flex;
+        flex-direction: column;
+    }
+}

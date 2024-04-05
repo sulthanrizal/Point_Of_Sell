@@ -1,0 +1,36 @@
+.container-header {
+    background-color: #1F1D2B;
+
+    .col-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .content-header {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8.5px;
+
+            .img-components-home {
+                border-radius: 8px;
+                padding: 20px;
+                margin: 20px 0px;
+            }
+
+            .img-home {
+                background-color: #EA7C69;
+                padding: 15px;
+                border-radius: 8px;
+            }
+
+            .img-components {
+                padding: 30px;
+            }
+
+
+        }
+    }
+}

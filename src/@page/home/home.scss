@@ -1,0 +1,135 @@
+.container-home {
+    width: 94.4vw;
+    height: 105vh;
+    background: #2D303E;
+    padding: 20px;
+
+    .header-home {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-first {
+            color: white;
+
+
+            p:first-child {
+                font-weight: 600;
+                font-size: 28px;
+                list-style: 39.2px;
+            }
+
+            p:last-child {
+                color: #889898;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 22.4px;
+            }
+        }
+
+        .header-last {
+            input {
+                width: 240px;
+                height: 48px;
+                padding-left: 45px;
+                border-radius: 10px;
+                background: #393C49;
+            }
+
+            .container-img-search {
+                position: absolute;
+                margin-top: 13px;
+                margin-left: 10px;
+
+                svg {
+                    color: white;
+                }
+
+            }
+        }
+    }
+
+    .flex-navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 30px;
+
+        .navbar-title-box {
+            display: flex;
+            gap: 100px;
+            color: white;
+        }
+
+        .navbar-input {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                color: white;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            select {
+                padding: 15px;
+                font-size: 0.9rem;
+                background-color: #1F1D2B;
+                color: white;
+                border-radius: 5px;
+            }
+        }
+
+        .container-menu-bar {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            color: white;
+
+
+            .menu-bar {
+                padding: 10px;
+                border-radius: 20px;
+                background: #1F1D2B;
+                margin-bottom: 25px;
+
+                .content-menu-bar {
+                    margin-top: -60px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px 0px;
+                    width: 192px;
+                    height: 280px;
+
+                    .menu-img {
+
+                        img {
+                            height: 130px;
+                            border-radius: 9999px;
+                            width: 130px;
+                        }
+                    }
+
+                    .text-menu {
+                        margin-top: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+
+                        .title-menu {
+                            text-align: center;
+                            width: 150px;
+                        }
+
+                        .stock-menu {
+                            color: #ABBBC2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
