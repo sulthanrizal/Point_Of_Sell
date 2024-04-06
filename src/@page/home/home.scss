@@ -1,6 +1,6 @@
 .container-home {
     width: 94.4vw;
-    height: 105vh;
+    height: 110vh;
     background: #2D303E;
     padding: 20px;
 
@@ -59,6 +59,16 @@
             display: flex;
             gap: 100px;
             color: white;
+            border-bottom: 2px solid #393C49;
+
+            .navbar-title {
+                padding: 10px 0px;
+            }
+
+            .selected-navbar {
+                color: #EA7C69;
+                border-bottom: 2px solid #EA7C69;
+            }
         }
 
         .navbar-input {
