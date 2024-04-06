@@ -9,25 +9,29 @@ const BarHome = [
     },
     {
         titleBar: 'Cold Dishes',
-        path: 'colddishes',
+        path: '/colddishes',
         element: <HotDishes />,
         status: false
     },
     {
         titleBar: 'Shoup',
-        status: false
+        status: false,
+        path: '/shoup'
     },
     {
         titleBar: 'Grill',
-        status: false
+        status: false,
+        path: '/grill'
     },
     {
         titleBar: 'Appetizer',
-        status: false
+        status: false,
+        path: '/appetizer'
     },
     {
         titleBar: 'Dessert',
-        status: false
+        status: false,
+        path: '/dessert'
     }
 ]
 export default BarHome;
