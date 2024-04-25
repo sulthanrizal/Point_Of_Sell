@@ -1,7 +1,8 @@
-import { Box, Text } from "@chakra-ui/react"
+import { Box, Flex, Text } from "@chakra-ui/react"
 import './dashboard.scss'
 import moment from "moment"
 import { ContentTop } from "./contentHeader"
+import { FilterOrder } from "./contentHeader/iconDashboard"
 
 const Dashboard = () => {
     const newDate = new Date()
@@ -23,6 +24,9 @@ const Dashboard = () => {
                                     </Box>
                                     <Box className="content-persen" style={{ color: item?.color }}>
                                         {item?.persen}
+                                        <Box className="increase" style={{ background: item?.bgColor }}>
+                                            {item?.increase}
+                                        </Box>
                                     </Box>
                                 </Box>
                                 <Box className="content-body-top">
@@ -35,6 +39,15 @@ const Dashboard = () => {
                         )
                     })
                 }
+            </Box>
+            <Box className="content-bottom">
+                <Flex className="content-bottom-header">
+                    <Text>Order Report</Text>
+                    <Text style={{ display: 'flex', alignItems: 'center' }}>
+                        <FilterOrder />
+                        Filter Order
+                    </Text>
+                </Flex>
             </Box>
         </Box>
     )
