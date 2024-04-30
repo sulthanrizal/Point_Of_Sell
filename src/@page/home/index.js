@@ -9,8 +9,8 @@ const Home = () => {
     const [ubahPageHome, setUbahPageHome] = useState(false)
     const date = new Date()
     const today = moment(date).format('dddd, D MMM YYYY')
-    const [bg, setBg] = useState(false)
-    let saveTitle = []
+    const [selectedBar, setSelectedBar] = useState("/hotdishes")
+
     return (
         <Box className="container-home">
             <Box className="header-home">
@@ -27,12 +27,11 @@ const Home = () => {
             <Box className="flex-navbar">
                 <Box className="navbar-title-box">
                     {
-                        BarHome.map((item, index) => {
-                            saveTitle.push(item)
-                            const data = saveTitle.map((ee, panjang) => panjang)
-                            // console.log(item?.titleBar)
+                        BarHome.map((item) => {
                             return (
-                                <Box className="navbar-title" style={{ color: bg && index == data?.length - 1 ? 'blue' : '' }} onClick={() => { setBg(true) }} >
+                                <Box
+                                    onClick={() => setSelectedBar(item?.path)}
+                                    className={`navbar-title ${selectedBar === item?.path && "selected-navbar"}`}  >
                                     {item?.titleBar}
                                 </Box>
                             )
