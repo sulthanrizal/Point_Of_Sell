@@ -33,6 +33,7 @@ const Home = () => {
                                     onClick={() => setSelectedBar(item?.path)}
                                     className={`navbar-title ${selectedBar === item?.path && "selected-navbar"}`}  >
                                     {item?.titleBar}
+                                    {console.log(selectedBar)}
                                 </Box>
                             )
                         })
