@@ -1,6 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import menuColdDishes from "./menuColdDishes";
 
+
 const MenuColdDishes = () => {
     return (
         <>
