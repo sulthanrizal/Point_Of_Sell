@@ -63,6 +63,7 @@
 
             .navbar-title {
                 padding: 10px 0px;
+                cursor: pointer;
             }
 
             .selected-navbar {
@@ -91,51 +92,56 @@
         }
 
         .container-menu-bar {
-            position: relative;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            color: white;
+
+            .col-menu-bar {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 40px;
+                color: white;
 
 
-            .menu-bar {
-                padding: 10px;
-                border-radius: 20px;
-                background: #1F1D2B;
-                margin-bottom: 25px;
+                .menu-bar {
+                    cursor: pointer;
+                    padding: 10px;
+                    border-radius: 20px;
+                    background: #1F1D2B;
+                    margin-bottom: 25px;
 
-                .content-menu-bar {
-                    margin-top: -60px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 10px 0px;
-                    width: 192px;
-                    height: 280px;
 
-                    .menu-img {
-
-                        img {
-                            height: 130px;
-                            border-radius: 9999px;
-                            width: 130px;
-                        }
-                    }
-
-                    .text-menu {
-                        margin-top: 15px;
+                    .content-menu-bar {
+                        margin-top: -60px;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        gap: 10px;
+                        padding: 10px 0px;
+                        width: 192px;
+                        height: 280px;
 
-                        .title-menu {
-                            text-align: center;
-                            width: 150px;
+                        .menu-img {
+
+                            img {
+                                height: 130px;
+                                border-radius: 9999px;
+                                width: 130px;
+                            }
                         }
 
-                        .stock-menu {
-                            color: #ABBBC2;
+                        .text-menu {
+                            margin-top: 15px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 10px;
+
+                            .title-menu {
+                                text-align: center;
+                                width: 150px;
+                            }
+
+                            .stock-menu {
+                                color: #ABBBC2;
+                            }
                         }
                     }
                 }
