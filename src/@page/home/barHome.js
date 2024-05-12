@@ -10,9 +10,9 @@ const BarHome = [
         status: false
     },
     {
-        titleBar: 'Shoup',
+        titleBar: 'Soup',
         status: false,
-        path: '/shoup'
+        path: '/soup'
     },
     {
         titleBar: 'Grill',
