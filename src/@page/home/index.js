@@ -4,7 +4,7 @@ import { ImgSearch } from "./imgSvg";
 import moment from "moment";
 import BarHome from "./barHome"
 import { useState } from "react";
-import { imgHotDishes } from "./menuHome";
+import routerMenuHome from "./routerMenuHome";
 const Home = () => {
     const [ubahPageHome, setUbahPageHome] = useState(false)
     const date = new Date()
@@ -48,28 +48,21 @@ const Home = () => {
                 </Box>
                 <Box className="container-menu-bar">
                     {
-                        imgHotDishes.map((item => {
+                        routerMenuHome.map((item) => {
+                            const pathMenuHome = item?.path
+                            const element = item?.element
+
                             return (
-                                <Box className="menu-bar" onClick={() => { setUbahPageHome(true) }}>
-                                    <Box className="content-menu-bar">
-                                        <Box className="menu-img">
-                                            <img src={item?.imgMenu} />
-                                        </Box>
-                                        <Box className="text-menu">
-                                            <Text className="title-menu">
-                                                {item?.titleMenu}
-                                            </Text>
-                                            <Text className="price-menu">
-                                                {item?.price}
-                                            </Text>
-                                            <Text className="stock-menu">
-                                                {item?.stock}
-                                            </Text>
-                                        </Box>
-                                    </Box>
+                                <Box className="col-menu-bar">
+                                    {
+                                        selectedBar === pathMenuHome ?
+                                            element :
+                                            ''
+                                    }
                                 </Box>
                             )
-                        }))
+                        })
+
                     }
                 </Box>
             </Box>
