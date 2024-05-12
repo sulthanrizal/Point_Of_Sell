@@ -3,7 +3,7 @@ import menuColdDishes from "./menuColdDishes";
 
 const MenuColdDishes = () => {
     return (
-        <Box className="container-cold-dishes">
+        <>
             {
                 menuColdDishes.map((item) => {
                     return (
@@ -30,7 +30,7 @@ const MenuColdDishes = () => {
                     )
                 })
             }
-        </Box>
+        </>
     )
 }
 
